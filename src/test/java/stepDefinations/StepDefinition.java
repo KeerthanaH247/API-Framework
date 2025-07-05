@@ -2,6 +2,7 @@ package stepDefinations;
 
 import static io.restassured.RestAssured.given;
 
+import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -30,7 +31,7 @@ public class StepDefinition extends Utils{
 	TestBuilder data=new TestBuilder();
 	
 @Given("Add place payload")
-public void add_place_payload() {
+public void add_place_payload() throws FileNotFoundException {
 	
 	 resspec = new ResponseSpecBuilder().expectStatusCode(200).expectContentType(ContentType.JSON).build();
 	 res=given().spec(requestSpecification()).body(data.addPlacePayload());
