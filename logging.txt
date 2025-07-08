@@ -16,18 +16,18 @@ Body:
         "lng": 33.427362
     },
     "accuracy": 50,
-    "name": "Keer",
+    "name": "Alex",
     "phone_number": "(+91) 983 893 3937",
-    "address": "Tumkur",
+    "address": "World cross center",
     "types": [
         "shoe park",
         "shop"
     ],
     "website": "http://google.com",
-    "language": "Kannada"
+    "language": "English"
 }
 HTTP/1.1 200 OK
-Date: Tue, 08 Jul 2025 14:16:30 GMT
+Date: Tue, 08 Jul 2025 14:30:03 GMT
 Server: Apache/2.4.52 (Ubuntu)
 Access-Control-Allow-Origin: *
 Access-Control-Allow-Methods: POST
@@ -40,8 +40,55 @@ Content-Type: application/json;charset=UTF-8
 
 {
     "status": "OK",
-    "place_id": "3e01df66293f4fd873eeb60d2038c5aa",
+    "place_id": "00210aa10a8f220f21f16b16c98dfed2",
     "scope": "APP",
-    "reference": "0c97da810a439507c19c8a66470860400c97da810a439507c19c8a6647086040",
-    "id": "0c97da810a439507c19c8a6647086040"
+    "reference": "b0b83bca659621718d9fdd521b9d706fb0b83bca659621718d9fdd521b9d706f",
+    "id": "b0b83bca659621718d9fdd521b9d706f"
+}
+Request method:	POST
+Request URI:	https://rahulshettyacademy.com/maps/api/place/add/json?key=qaclick123
+Proxy:			<none>
+Request params:	<none>
+Query params:	key=qaclick123
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "location": {
+        "lat": -38.383494,
+        "lng": 33.427362
+    },
+    "accuracy": 50,
+    "name": "Keer",
+    "phone_number": "(+91) 983 893 3937",
+    "address": "Tumkur",
+    "types": [
+        "shoe park",
+        "shop"
+    ],
+    "website": "http://google.com",
+    "language": "Kannada"
+}
+HTTP/1.1 200 OK
+Date: Tue, 08 Jul 2025 14:30:04 GMT
+Server: Apache/2.4.52 (Ubuntu)
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
+Content-Length: 194
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+
+{
+    "status": "OK",
+    "place_id": "495c772fcd2e90433d2fc7635ba3cf4d",
+    "scope": "APP",
+    "reference": "8089bf1e35021f319dfbe8cd19174a8b8089bf1e35021f319dfbe8cd19174a8b",
+    "id": "8089bf1e35021f319dfbe8cd19174a8b"
 }
