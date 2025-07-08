@@ -38,9 +38,10 @@ public void add_place_payload_with(String name, String language, String address)
   }
 @When("User calls {string} with POST http request")
 public void user_calls_with_post_http_request(String resource) {
-	APIResources resourceAPI = APIResources.valueOf(resource); 
+	APIResources resourceAPI = APIResources.valueOf(resource);
 	resourceAPI.getResource();
-	 resspec = new ResponseSpecBuilder().expectStatusCode(200).expectContentType(ContentType.JSON).build();
+	 resspec = new ResponseSpecBuilder().expectStatusCode(200)
+			 .expectContentType(ContentType.JSON).build();
 	 response=res.when().post(resourceAPI.getResource())
 				.then().spec(resspec).extract().response();
 
