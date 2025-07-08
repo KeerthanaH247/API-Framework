@@ -17,6 +17,7 @@ import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 import io.restassured.specification.ResponseSpecification;
 import pojo.AddPlace;
+import resources.APIResources;
 import resources.TestBuilder;
 import resources.Utils;
 
@@ -36,9 +37,11 @@ public void add_place_payload_with(String name, String language, String address)
 	 //data is driven from test data class
   }
 @When("User calls {string} with POST http request")
-public void user_calls_with_post_http_request(String string) {
+public void user_calls_with_post_http_request(String resource) {
+	APIResources resourceAPI = APIResources.valueOf(resource); 
+	resourceAPI.getResource();
 	 resspec = new ResponseSpecBuilder().expectStatusCode(200).expectContentType(ContentType.JSON).build();
-	 response=res.when().post("/maps/api/place/add/json")
+	 response=res.when().post(resourceAPI.getResource())
 				.then().spec(resspec).extract().response();
 
 }
