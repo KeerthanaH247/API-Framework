@@ -30,13 +30,11 @@ public class StepDefinition extends Utils{
 	Response response;
 	TestBuilder data=new TestBuilder();
 	
-@Given("Add place payload")
-public void add_place_payload() throws IOException {
-	
-	
-	 res=given().spec(requestSpecification()).body(data.addPlacePayload());
+@Given("Add place payload with {string} {string} {string}")
+public void add_place_payload_with(String name, String language, String address) throws IOException {
+	 res=given().spec(requestSpecification()).body(data.addPlacePayload(name, language, address));
 	 //data is driven from test data class
-}
+  }
 @When("User calls {string} with POST http request")
 public void user_calls_with_post_http_request(String string) {
 	 resspec = new ResponseSpecBuilder().expectStatusCode(200).expectContentType(ContentType.JSON).build();
