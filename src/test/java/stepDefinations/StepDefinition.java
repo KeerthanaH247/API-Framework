@@ -6,6 +6,8 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.fasterxml.jackson.databind.jsontype.impl.AsExistingPropertyTypeSerializer;
+
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -36,14 +38,24 @@ public void add_place_payload_with(String name, String language, String address)
 	 res=given().spec(requestSpecification()).body(data.addPlacePayload(name, language, address));
 	 //data is driven from test data class
   }
-@When("User calls {string} with POST http request")
-public void user_calls_with_post_http_request(String resource) {
+@When("User calls {string} with {string} http request")
+public void user_calls_with_post_http_request(String resource, String method) {
 	APIResources resourceAPI = APIResources.valueOf(resource);
 	resourceAPI.getResource();
 	 resspec = new ResponseSpecBuilder().expectStatusCode(200)
 			 .expectContentType(ContentType.JSON).build();
-	 response=res.when().post(resourceAPI.getResource())
-				.then().spec(resspec).extract().response();
+	 if(method.equalsIgnoreCase("POST"))
+	 {
+	 response=res.when().post(resourceAPI.getResource());
+	 }
+	 else if(method.equalsIgnoreCase(method))
+	 {
+		 response=res.when().get(resourceAPI.getResource());
+	 }
+	 else if(method.equalsIgnoreCase("DELETE"))
+	 {
+		 response=res.when().delete(resourceAPI.getResource());
+	 }
 
 }
 @Then("the API call got success with status code {int}")
