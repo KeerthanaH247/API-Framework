@@ -27,7 +27,7 @@ Body:
     "language": "English"
 }
 HTTP/1.1 200 OK
-Date: Thu, 10 Jul 2025 05:19:04 GMT
+Date: Thu, 10 Jul 2025 10:21:59 GMT
 Server: Apache/2.4.52 (Ubuntu)
 Access-Control-Allow-Origin: *
 Access-Control-Allow-Methods: POST
@@ -40,17 +40,17 @@ Content-Type: application/json;charset=UTF-8
 
 {
     "status": "OK",
-    "place_id": "c1815ed68af8f74775b16610b538edc3",
+    "place_id": "3f397ff2cddcaa1106f6aac8c6f87413",
     "scope": "APP",
-    "reference": "54a720d3e9948e01f130f0c722953dc754a720d3e9948e01f130f0c722953dc7",
-    "id": "54a720d3e9948e01f130f0c722953dc7"
+    "reference": "261680fd0ecc8393391313d81a6d6854261680fd0ecc8393391313d81a6d6854",
+    "id": "261680fd0ecc8393391313d81a6d6854"
 }
 Request method:	GET
-Request URI:	https://rahulshettyacademy.com/maps/api/place/get/json?key=qaclick123&place_id=c1815ed68af8f74775b16610b538edc3
+Request URI:	https://rahulshettyacademy.com/maps/api/place/get/json?key=qaclick123&place_id=3f397ff2cddcaa1106f6aac8c6f87413
 Proxy:			<none>
 Request params:	<none>
 Query params:	key=qaclick123
-				place_id=c1815ed68af8f74775b16610b538edc3
+				place_id=3f397ff2cddcaa1106f6aac8c6f87413
 Form params:	<none>
 Path params:	<none>
 Headers:		Accept=*/*
@@ -59,7 +59,7 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 200 OK
-Date: Thu, 10 Jul 2025 05:19:11 GMT
+Date: Thu, 10 Jul 2025 10:22:00 GMT
 Server: Apache/2.4.52 (Ubuntu)
 Access-Control-Allow-Origin: *
 Access-Control-Allow-Methods: POST
@@ -84,11 +84,11 @@ Content-Type: application/json;charset=UTF-8
     "language": "English"
 }
 Request method:	GET
-Request URI:	https://rahulshettyacademy.com/maps/api/place/get/json?key=qaclick123&place_id=c1815ed68af8f74775b16610b538edc3
+Request URI:	https://rahulshettyacademy.com/maps/api/place/get/json?key=qaclick123&place_id=3f397ff2cddcaa1106f6aac8c6f87413
 Proxy:			<none>
 Request params:	<none>
 Query params:	key=qaclick123
-				place_id=c1815ed68af8f74775b16610b538edc3
+				place_id=3f397ff2cddcaa1106f6aac8c6f87413
 Form params:	<none>
 Path params:	<none>
 Headers:		Accept=*/*
@@ -97,7 +97,7 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 200 OK
-Date: Thu, 10 Jul 2025 05:19:13 GMT
+Date: Thu, 10 Jul 2025 10:22:02 GMT
 Server: Apache/2.4.52 (Ubuntu)
 Access-Control-Allow-Origin: *
 Access-Control-Allow-Methods: POST
@@ -122,11 +122,11 @@ Content-Type: application/json;charset=UTF-8
     "language": "English"
 }
 Request method:	GET
-Request URI:	https://rahulshettyacademy.com/maps/api/place/delete/json?key=qaclick123&place_id=c1815ed68af8f74775b16610b538edc3
+Request URI:	https://rahulshettyacademy.com/maps/api/place/delete/json?key=qaclick123&place_id=3f397ff2cddcaa1106f6aac8c6f87413
 Proxy:			<none>
 Request params:	<none>
 Query params:	key=qaclick123
-				place_id=c1815ed68af8f74775b16610b538edc3
+				place_id=3f397ff2cddcaa1106f6aac8c6f87413
 Form params:	<none>
 Path params:	<none>
 Headers:		Accept=*/*
@@ -135,7 +135,7 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 200 OK
-Date: Thu, 10 Jul 2025 05:19:15 GMT
+Date: Thu, 10 Jul 2025 10:22:05 GMT
 Server: Apache/2.4.52 (Ubuntu)
 Access-Control-Allow-Origin: *
 Access-Control-Allow-Methods: POST
@@ -145,3 +145,33 @@ Content-Length: 0
 Keep-Alive: timeout=5, max=100
 Connection: Keep-Alive
 Content-Type: application/json; charset=UTF-8
+Request method:	POST
+Request URI:	https://rahulshettyacademy.com/maps/api/place/delete/json?key=qaclick123
+Proxy:			<none>
+Request params:	<none>
+Query params:	key=qaclick123
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "place_id": "3f397ff2cddcaa1106f6aac8c6f87413"
+}
+HTTP/1.1 200 OK
+Date: Thu, 10 Jul 2025 10:22:05 GMT
+Server: Apache/2.4.52 (Ubuntu)
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
+Content-Length: 15
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+
+{
+    "status": "OK"
+}

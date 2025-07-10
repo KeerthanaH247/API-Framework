@@ -15,3 +15,11 @@ Examples:
 | name | language | address |
 | Alex | English | World cross center |
 #| Keer | Kannada | Tumkur |
+
+Scenario: Verify if Delete place functionality is working
+
+Given DeletePlace Payload
+When User calls "DeletePlaceAPI" with "POST" http request
+Then the API call got success with status code 200
+And "status" in response body is "OK"
+
