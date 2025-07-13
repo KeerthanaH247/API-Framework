@@ -47,6 +47,7 @@
     <version>4.13.2</version>
     <scope>test</scope>
 </dependency>
+  </dependencies>
  <build>
         <plugins>
             <plugin>
@@ -59,7 +60,7 @@
             <plugin>
                 <groupId>net.masterthought</groupId>
                 <artifactId>maven-cucumber-reporting</artifactId>
-                <version> 5.9.0</version>
+                <version>5.9.0</version>
                 <executions>
                     <execution>
                         <id>execution</id>
@@ -92,6 +93,5 @@
             </plugin>
         </plugins>
     </build>
-  </dependencies>
   
 </project>
