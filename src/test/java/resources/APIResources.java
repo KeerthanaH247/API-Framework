@@ -12,8 +12,8 @@ public enum APIResources {
 	{
 		this.resource=resource;
 	}
-	
 	public String getResource() {
 		return resource;
 	}
+
 }
